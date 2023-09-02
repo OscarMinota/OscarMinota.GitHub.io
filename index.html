@@ -8,8 +8,8 @@
             <style>
 
                 @font-face {
-                    font-family:'Prata-Regular';
-                    src: url(Prata-Regular.ttf);
+                    font-family:vig;
+                    src: url(Vignettic.ttf);
                 }
 
                 ul {
@@ -28,13 +28,15 @@
                     color: honeydew;
                 }
 
-                h1{
+                h1{      
+                    font-family:vig;                         
                     text-align: center;
-                    color: honeydew;
-                    text-align: center;                   
+                    color:#FFC710;                                      
                     font-size: 6em;
                     margin:0;
                     padding:0;
+                    line-height: 2.6cm;
+                    margin-top: 150px;
                 }
 
                 img {
@@ -44,9 +46,7 @@
 
                 body {
                     
-                    background-image: url('SneakerBlueprintAnime.png');
-                    background-size: 500px; 
-                    background-position: center;                   
+                   background-color: black;                 
                 }
 
                     p{
@@ -55,7 +55,12 @@
                     
                 }
 
-                
+                .logo{
+                    width: 180px;
+                    height: auto;
+                    cursor: pointer;
+                    position: absolute;
+                }
 
                 .navbar ul li {
                     list-style: none;
@@ -67,7 +72,7 @@
 
                 .navbar ul li a{
                     text-decoration: none;
-                    color: #fff;
+                    color: #FFC710;
                     text-transform: uppercase;
                 }
 
@@ -75,7 +80,7 @@
                     content: '';
                     height: 3px;
                     width: 0;
-                    background: #fff;
+                    background:#FFC710;
                     position: absolute;
                     left: 0;
                     bottom:-5px;
@@ -85,6 +90,50 @@
                 .navbar ul li:hover::after{
                     width: 100%;
                 }
+
+                .secondtext {
+                    color: white;
+                    text-align: center;
+                    font-family:vig;
+                    font-size: 1.5em;
+                    margin-top: 20px;
+                }
+
+             button{
+                width: 200px;
+                padding: 15px 0;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                cursor: pointer;
+                border: 2.3px solid #FFC710;
+                background: transparent;
+                color: white;
+                font-size: .6em;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+             }
+
+             span{
+                background: #FFC710;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.3s;
+             }
+
+             button:hover span{
+                width: 100%;
+             }
+
+             button:hover{
+                border: none;
+             }
                 
             </style>
        
@@ -94,6 +143,7 @@
       <body>
     <header>
         <div class="navbar">
+           <img src="SneakerLogoStraight.png" class="logo">
             <nav>
                 <ul>
                     <li><a href="#">Contact</a></li>
@@ -110,14 +160,21 @@
         </header>
 
         
+        <div class="maintext">
+            <h1>
+                <p>Welcome to</p> <p>the Sneaker Lab</p>
+            </h1>                
+        </div>
 
-            <h1>
-            <p>Hello World</p> <p>my Name is Oscar Minota</p>
-            </h1>
+        <div class="secondtext">
+            <p> Find Your Style   
+            <div class="button">
+                <button type="button"><span></span>Press Here</button>
+            </div>                
+        </div>
+            
 
-            <h3>
-            My first paragraph
-            </h3>
+            
 
 
 <!--Below are my images-->

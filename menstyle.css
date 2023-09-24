@@ -11,3 +11,17 @@
     margin: 20px;
     position: relative;
 }
+
+li{
+    float: right;
+}
+
+footer{
+    color: white;
+    font-size: .85em;
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    background-color: red;
+}
+
+

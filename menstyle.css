@@ -1,0 +1,13 @@
+.logo{
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+}
+
+.directory ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
